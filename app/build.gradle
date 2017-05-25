@@ -42,8 +42,8 @@ dependencies {
     compile 'io.reactivex:rxandroid:0.24.0'
     ///
     provided 'com.google.dagger:dagger-compiler:2.1'
-    ///compile 'com.google.dagger:dagger:2.1'
-    compile 'com.squareup.dagger:dagger:1.2.1'
+    compile 'com.google.dagger:dagger:2.1'
+    //compile 'com.squareup.dagger:dagger:1.2.1'
     ///
     provided 'org.glassfish:javax.annotation:10.0-b28'
     //

@@ -1,9 +1,10 @@
-package samir.appsghor.com.mvppracticalexample;
+package samir.appsghor.com.mvppracticalexample.base;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.annotation.CallSuper;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
@@ -32,7 +33,14 @@ public abstract class BaseActivity extends AppCompatActivity {
      * @param savedInstanceState
      * @param intent
      */
-    private void onViewReady(Bundle savedInstanceState, Intent intent) {
+   @CallSuper
+    protected void onViewReady(Bundle savedInstanceState, Intent intent) {
+        resolveDaggerDependency();
+
+
+    }
+
+    protected void resolveDaggerDependency() {
 
     }
 
