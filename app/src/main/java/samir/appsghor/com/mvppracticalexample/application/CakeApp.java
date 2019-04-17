@@ -4,6 +4,7 @@ import android.app.Application;
 
 import samir.appsghor.com.mvppracticalexample.dependencyInjection.component.DaggerApplicationComponent;
 
+
 /**
  * Created by samir on 5/25/2017.
  */
@@ -21,7 +22,7 @@ public class CakeApp extends Application {
         super.onTerminate();
     }
 
-    private void initializeApplicationComponent(){
+    private void initializeApplicationComponent() {
         DaggerApplicationComponent.builder();
     }
 

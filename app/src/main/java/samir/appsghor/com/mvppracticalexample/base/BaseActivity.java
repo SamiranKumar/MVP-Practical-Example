@@ -13,12 +13,17 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 /***
- * BaseActivity abstract class is parent calss of all activity class
+ * BaseActivity abstract class is parent class of all activity class
  */
 public abstract class BaseActivity extends AppCompatActivity {
     private ProgressDialog mProgressDialog;
 
-    @Override
+
+
+
+
+
+    /*@Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(getContentView());
@@ -28,12 +33,13 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected abstract int getContentView();
 
-    /**
+    *//**
      * To Used by child Activities class
+     *
      * @param savedInstanceState
      * @param intent
-     */
-   @CallSuper
+     *//*
+    @CallSuper
     protected void onViewReady(Bundle savedInstanceState, Intent intent) {
         resolveDaggerDependency();
 
@@ -42,7 +48,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     protected void resolveDaggerDependency() {
 
-    }
+    }*/
 
     protected void showDialog(String message) {
         if (mProgressDialog == null) {
